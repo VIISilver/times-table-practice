@@ -1,4 +1,5 @@
 import React from 'react';
+import Data from './components/data/Data'
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Times Table Practice</h1>
       </header>
+      <Data />
     </div>
   );
 }
