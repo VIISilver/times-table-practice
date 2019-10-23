@@ -6,8 +6,8 @@ export default function Cell(props) {
         <Fragment>
             <input
             id={props.cellIdFromRow}
-            value={props.cellIdFromRow}
-            onChange={props.handlechangefromrow}
+            defaultValue={props.cellIdFromRow}
+            onChange={props.handleChangeFromRow}
             disabled={props.cellIdFromRow[0] === 'a' || props.cellIdFromRow[1] === '0'} />
         </Fragment>
     )

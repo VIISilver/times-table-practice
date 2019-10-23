@@ -22,8 +22,8 @@ export default class Table extends Component {
                     <Row 
                     key={key}
                     rowValFromTable={item}
-                    columnarrfromtable={this.state.columns}
-                    handlechangefromtable={this.handleChange}
+                    columnArrFromTable={this.state.columns.join(',')}
+                    handleChangeFromTable={this.handleChange}
                     />
                 ))}
             </div>

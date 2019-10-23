@@ -7,9 +7,9 @@ export default function Row(props) {
         <div 
         className='row-wrap'
         id={props.rowValFromTable}
-        handlechangefromrow={props.handlechangefromtable}
+        handleChangeFromRow={props.handleChangeFromTable}
         >
-            {props.columnarrfromtable.map((item, key) =>(
+            {props.columnArrFromTable.split(',').map((item, key) =>(
                 <Cell
                 key={key}
                 cellIdFromRow={`${props.rowValFromTable}${item}`}
