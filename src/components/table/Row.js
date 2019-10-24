@@ -4,15 +4,13 @@ import './Row.css'
 
 export default function Row(props) {
     return (
-        <div 
-        className='row-wrap'
-        id={props.rowValFromTable}
-        handleChangeFromRow={props.handleChangeFromTable}
-        >
+        <div>
             {props.columnArrFromTable.split(',').map((item, key) =>(
                 <Cell
                 key={key}
                 cellIdFromRow={`${props.rowValFromTable}${item}`}
+                handleChangeFromRow={props.handleChangeFromTable}
+                columnArrFromRow={props.columnArrFromTable}
                 />
             ))}
         </div>
